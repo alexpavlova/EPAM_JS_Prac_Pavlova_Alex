@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" , href="dist/app.css" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <title>Project2</title>
+  </head>
+  <body>
+    <div class="Activemode" id="response"></div>
+    <div class="Div">
+      <div class="subDiv">
+        <input type="radio" onclick="action1();" name="icon" id="list" />
+        <label for="list">
+			<span class="iconify fo-play-list" data-icon="fontisto:play-list" data-inline="false"></span>
+          <span class="voices">All voices</span>
+        </label>
+      </div>
+      <div class="subDiv">
+        <input type="radio" onclick="action2();" name="icon" id="micro" />
+        <label for="micro">
+			<span class="iconify fo-mic" data-icon="fontisto:mic" data-inline="false"></span>
+          <span class="micro">Microphone</span>
+        </label>
+      </div>
+      <div class="subDiv">
+        <input type="radio" onclick="action3();" name="icon" id="podcast" />
+        <label for="podcast">
+			<span class="iconify fo-podcast" data-icon="fontisto:podcast" data-inline="false"></span>
+          <span class="podcast">Stream</span>
+        </label>
+      </div>
+    </div>
+    <script src="dist/app.js"></script>
+  </body>
+</html>
