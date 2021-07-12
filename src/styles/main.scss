@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+$base-font: 'Open Sans';
+
+body {
+    margin: 0 0 5vh 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: $base-font;
+}
+
+.mode {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    display: flex;
+    overflow-x: auto;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    overflow: hidden;
+    font-size: 1.5 em;
+    color: rgb(129, 143, 78);
+    background-color: white;
+    border: 0;
+    padding: 0;
+}
+
+.recordButtonDiv {
+    width: 300px;
+    height: 300px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.recordCircle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(129, 143, 78);
+    border: none;
+    border-radius: 10%;
+    font-size: 2em;
+    font-family: $base-font;
+    overflow: hidden;
+}
+
+.recording {
+    background-color: rgb(170, 9, 44);
+}
+
+.button:hover {
+    background-color: white;
+}
+
+.activeButton {
+    color: rgb(170, 9, 44);
+}
+
+.displayedMode {
+    display: block;
+}
